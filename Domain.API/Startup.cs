@@ -10,7 +10,6 @@ using SQLDataLayer;
 using Microsoft.EntityFrameworkCore;
 using NSwag.Generation.AspNetCore;
 using NSwag.Generation.Processors.Security;
-using Microsoft.AspNetCore.OData.Formatter;
 using Microsoft.OData.ModelBuilder;
 using Microsoft.AspNetCore.OData;
 using Domain.Data;

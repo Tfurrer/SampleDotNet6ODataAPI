@@ -3,10 +3,7 @@ using Domain.API.Models;
 using Domain.Data;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.JsonPatch.Operations;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Domain.API.Profiles
 {
