@@ -1,20 +1,17 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+Most of the updates can be found in the Domain.API csproj packages and the Startup file. This is a working sample for OData with .Net Core 6 using an In Mem DB.
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+It is best to use Visual Studio 2022
+1.	Perform a DotNet Restore
+2.	Load Some Data into the DB using a few posts on the Swagger API
+3.  Validate that the Get is working
+4.  Enable the APIKey if you would like by uncommenting the attribute on the controller.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+# Additional Resources
+- [ODAta 8.0](https://devblogs.microsoft.com/odata/asp-net-odata-8-0-preview-for-net-5/)
+- [OData 8.0 Versioning](https://devblogs.microsoft.com/odata/api-versioning-extension-with-asp-net-core-odata-8/)
+- [OData + DotNet Core 6](https://devblogs.microsoft.com/odata/up-running-w-odata-in-asp-net-6/)
+- [OData + DotNet Core 6 Breaking Changes](https://docs.microsoft.com/en-us/ef/core/what-is-new/ef-core-6.0/breaking-changes)
+- [Another Sample App](https://github.com/OData/AspNetCoreOData/blob/main/sample/ODataRoutingSample/Startup.cs)
