@@ -1,0 +1,26 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CosmoDBLayer/bin
+/CosmoDBLayer/obj
+/Domain.Abstractions/bin
+/Domain.Abstractions/obj
+/Domain.API/bin/Debug/net5.0
+/Domain.API/obj
+/Domain.Data/bin/Debug/netcoreapp3.1
+/Domain.Data/obj/Debug/netcoreapp3.1
+/Domain.Data/obj
+/Domain.API/bin/Release/net5.0
+/Domain.API/Properties
+/Domain.Data/bin/Release/netcoreapp3.1
+/Domain.API.Tests/bin/Debug/net5.0
+/Domain.API.Tests/obj
+/Domain.Data/bin/Debug/net5.0
+/SQLDataLayer/bin/Debug/net5.0
+/SQLDataLayer/obj
+/.vs/Domain.API
+/Domain.API/bin/Debug/net6.0
+/Domain.API/appsettings.Development.json
+/Domain.Data/bin
+/SQLDataLayer/bin

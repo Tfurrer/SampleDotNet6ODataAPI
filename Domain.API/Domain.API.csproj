@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="11.0.1" />
+	  <PackageReference Include="AutoMapper.AspNetCore.OData.EFCore" Version="3.0.5" />
+	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+	<PackageReference Include="Azure.Storage.Blobs" Version="12.13.0" />
+	<PackageReference Include="Microsoft.AspNetCore.App">
+		<PrivateAssets Condition="'%(PackageReference.Version)' == ''">all</PrivateAssets>
+		<Publish Condition="'%(PackageReference.Version)' == ''">true</Publish>
+	</PackageReference>
+	<PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="6.0.6" />
+	<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+	<PackageReference Include="NSwag.AspNetCore" Version="13.16.1" />
+	<PackageReference Include="NSwag.Generation.AspNetCore" Version="13.16.1" />
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.6" />
+	<PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.3" />
+	
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Data\Domain.Data.csproj" />
+    <ProjectReference Include="..\SQLDataLayer\SQLDataLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\V2\" />
+  </ItemGroup>
+
+</Project>

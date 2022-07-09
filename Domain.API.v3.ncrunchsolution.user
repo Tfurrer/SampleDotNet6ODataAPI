@@ -1,0 +1,44 @@
+﻿<SolutionConfiguration>
+  <Settings>
+    <AutoEnable>True</AutoEnable>
+    <CurrentEngineMode>Run all tests automatically [Global]</CurrentEngineMode>
+    <MetricsTreeLayout>
+      <Column>
+        <Name>Name</Name>
+        <Width>363</Width>
+      </Column>
+      <Column>
+        <Name>CodeCoveragePercentage</Name>
+        <Width>239</Width>
+      </Column>
+      <Column>
+        <Name>CompiledLines</Name>
+        <Width>204</Width>
+      </Column>
+      <Column>
+        <Name>CoveredLines</Name>
+        <Width>191</Width>
+      </Column>
+      <Column>
+        <Name>UncoveredLines</Name>
+        <Width>221</Width>
+      </Column>
+      <Column>
+        <Name>CodeLines</Name>
+        <Width>152</Width>
+      </Column>
+      <Column>
+        <Name>ExcludedLines</Name>
+        <Width>201</Width>
+      </Column>
+    </MetricsTreeLayout>
+    <TestsWindowMenuOptions>
+      <VerticalSplitMenuOption>false</VerticalSplitMenuOption>
+      <ShowPassingTestsMenuOption>true</ShowPassingTestsMenuOption>
+      <ShowFailingTestsMenuOption>true</ShowFailingTestsMenuOption>
+      <ShowUnexecutedTestsMenuOption>true</ShowUnexecutedTestsMenuOption>
+      <ShowIgnoredTestsMenuOption>true</ShowIgnoredTestsMenuOption>
+    </TestsWindowMenuOptions>
+    <TestsWindowSplitterDistance>95%</TestsWindowSplitterDistance>
+  </Settings>
+</SolutionConfiguration>
