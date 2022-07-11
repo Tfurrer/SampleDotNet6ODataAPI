@@ -12,5 +12,24 @@ namespace Domain.Data
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
+        public virtual ICollection<ExampleDataChild> Children { get; set; } = new List<ExampleDataChild>();
+        public virtual ExampleDataSingle? Single { get; set; }
+    }
+
+    public class ExampleDataChild
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Group { get; set; }
+        public int ExampleDataId { get; set; }
+        public ExampleData ExampleData { get; set; }
+    }
+    public class ExampleDataSingle
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Standard { get; set; }
+        public int ExampleDataId { get; set; }
+        public ExampleData ExampleData { get; set; }
     }
 }

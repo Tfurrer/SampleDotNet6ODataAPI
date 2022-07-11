@@ -18,14 +18,14 @@ namespace Domain.API.Controllers.V2
     //[Authorize]
     //[APIKey]
     [ApiController]
-    [Route("api/v{version:apiVersion}/sample")]
-    public class SampleController : ControllerBase
+    [Route("api/v{version:apiVersion}/ExampleData")]
+    public class ExampleDataController : ControllerBase
     {
         private DataContext _db;
         private readonly IMapper _mapper;
         private QuerySettings _settings = new QuerySettings { ODataSettings = new ODataSettings { HandleNullPropagation = HandleNullPropagationOption.Default } };
 
-        public SampleController(DataContext db, IMapper mapper)
+        public ExampleDataController(DataContext db, IMapper mapper)
         {
             _db = db;
             _mapper = mapper;

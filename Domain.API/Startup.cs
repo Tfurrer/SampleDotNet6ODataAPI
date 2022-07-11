@@ -57,6 +57,21 @@ namespace Domain.API
 
 
             services.AddAutoMapper(typeof(ExampleDataProfile));
+
+            var sp = services.BuildServiceProvider();
+            using (var context = sp.GetService<DataContext>())
+            {
+                context.Database.EnsureCreated();
+
+                //var testBlog = context.Blogs.FirstOrDefault(b => b.Url == "http://test.com");
+                //if (testBlog == null)
+                //{
+                //    context.Blogs.Add(new Blog { Url = "http://test.com" });
+                //}
+
+                context.SaveChanges();
+            }
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
